@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Pixel Art</title>
+</head>
+<body>
+    <canvas width="1024" height="1024" style="position:absolute; top:0; left:0;" id="canvas"></canvas>
+    <div style="position:absolute; top:384px; left:1028px">
+        <p>
+            <label for="color">Select a color:</label>
+            <input type="color" id="color" name="color" value="#ff0000">    
+        </p>
+        <p>
+            <label for="range">Select a transparency:</label>
+            <input type="range" min="0" max="255" value="255" class="slider" id="transparency">
+        </p>
+        <a download="download" id="download">Download as png</a>
+        <br/><br/>
+        <label>Upload png:</label>
+        <input type="file" id="imageLoader" name="imageLoader"/>    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
